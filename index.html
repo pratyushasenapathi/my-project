@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Search</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <center>
+        <h1>copy Dealers<br /></h1>
+        <h1><center>Product Search</center></h1>
+      </center>
+      <form onsubmit="val()" name="myForm" action="message.php" method="post">
+        <h3>
+          <p>
+            <b>Product Name<em>(substring)</em></b>
+          </p>
+        </h3>
+        <div class="field1">
+          <input type="text" name="name" id="name" placeholder="" />
+        </div>
+
+        <h3>
+          <p>
+            <b>Warehouse City<em>(substring)</em></b>
+          </p>
+        </h3>
+        <div class="field1">
+          <input type="text" name="city" id="city" placeholder="" />
+        </div>
+
+        <table>
+          <tr>
+            <td width="900px">
+              <h3>
+                <p><b>Minimum Quantity</b></p>
+              </h3>
+              <div class="dbl-field">
+                <div class="field">
+                  <input
+                    type="number"
+                    step="1"
+                    id="miq"
+                    name="minQ"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+            </td>
+
+            <td width="900px">
+              <h3>
+                <p><b>Maximum Quantity</b></p>
+              </h3>
+              <div class="dbl-field">
+                <div class="field">
+                  <input
+                    type="number"
+                    step="1"
+                    id="maq"
+                    name="maxQ"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <td width="900px">
+              <h3>
+                <p><b>Minimum price</b></p>
+              </h3>
+              <div class="dbl-field">
+                <div class="field">
+                  <input
+                    type="number"
+                    step="any"
+                    id="minP"
+                    name="minP"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+            </td>
+
+            <td width="900px">
+              <h3>
+                <p><b>Maximum price</b></p>
+              </h3>
+              <div class="dbl-field">
+                <div class="field">
+                  <input
+                    type="number"
+                    step="any"
+                    id="maxP"
+                    name="maxP"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <!--</div>-->
+            </td>
+          </tr>
+        </table>
+
+        <div class="dbl-field">
+          <div class="field">
+            <div class="button-area">
+              <button type="reset" style="width: 200px">Clear Form</button>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              <button type="submit" style="width: 200px" onsubmit="val()">
+                &nbsp; Search Products
+              </button>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="middleware.js"></script>
+  </body>
+</html>
